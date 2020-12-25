@@ -78,3 +78,6 @@ body {
 .container {
     min-width: 100%;
 }
+.row {
+    min-width: 100%;
+}
