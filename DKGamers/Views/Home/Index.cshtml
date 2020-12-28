@@ -1,63 +1,24 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model HaberListViewModel
+
 <div class="container-fluid">
     <div class="row justify-content-between">
         <div class="col-8">
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+
+            @foreach (var item in Model.Haberler)
+            {
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center" style="border:solid;  border-color:black;">
+                        <div class="col-5">
+                            <img src="~/img/haber/@item.HaberResim" alt="..." class="img-thumbnail">
+                        </div>
+                        <div class="col-7">
+                            <a style="color:white;" href="/home/detail/@item.HaberID">@item.HaberBaslik</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
+                <br />
+
+            }
         </div>
         <div class="col-3" style="background-color:black;">
             <ul class="nav flex-column">
@@ -76,66 +37,7 @@
             </ul>
         </div>
     </div>
-</div>
-<br />
-<div class="container-fluid">
-    <div class="row justify-content-between">
-        <div class="col-8">
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-12 d-flex align-items-center" style="background-color:red;">
-                    <div class="col-5" style="background-color:gray;">
-                        <img src="" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-7" style="background-color:green;">
-                        <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="row justify-content-end">
         <div class="col-3" style="background-color:black;">
             <ul class="nav flex-column">
                 <li class="nav-item">
