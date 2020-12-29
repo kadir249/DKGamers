@@ -9,6 +9,18 @@
     <Compile Remove="Migrations\20201228112310_oyunKategoriEkleme.Designer.cs" />
     <Compile Remove="Migrations\20201228112934_oyunKategoriEkleme.cs" />
     <Compile Remove="Migrations\20201228112934_oyunKategoriEkleme.Designer.cs" />
+    <Compile Remove="Migrations\20201228153405_oyunDeneme2.cs" />
+    <Compile Remove="Migrations\20201228153405_oyunDeneme2.Designer.cs" />
+    <Compile Remove="Migrations\20201229065500_oyunDeneme3.cs" />
+    <Compile Remove="Migrations\20201229065500_oyunDeneme3.Designer.cs" />
+    <Compile Remove="Migrations\20201229070016_haberDeneme.cs" />
+    <Compile Remove="Migrations\20201229070016_haberDeneme.Designer.cs" />
+    <Compile Remove="Migrations\20201229115403_oyunDeneme4.cs" />
+    <Compile Remove="Migrations\20201229115403_oyunDeneme4.Designer.cs" />
+    <Compile Remove="Migrations\20201229122350_oyunDeneme3.cs" />
+    <Compile Remove="Migrations\20201229122350_oyunDeneme3.Designer.cs" />
+    <Compile Remove="Migrations\20201229123544_oyunDeneme3.cs" />
+    <Compile Remove="Migrations\20201229123544_oyunDeneme3.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
