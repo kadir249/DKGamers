@@ -12,7 +12,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark text-white border-bottom box-shadow mb-3 border border-warning">
             <div class="container">
                 <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">
-                    <span class="icon icon-bike"></span>
+                    <span class="icon icon-home"></span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -78,13 +78,28 @@
                         </li>
                     </ul>
                 </div>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2 w-25" type="text" style="margin-right:5px;" placeholder="Kullanıcı Adı" aria-label="aranacak kelimeyi al" />
-                    <input class="form-control mr-sm-2 w-25" style="margin-right:5px;" type="text" placeholder="Şifre" aria-label="aranacak kelimeyi al" />
-
-                    <button class="btn btn-warning text-white mb-2" style="margin-right:5px; margin-top:1%" type="button">Giriş Yap</button>
-                    <button class="btn btn-warning text-white mb-2" style="margin-top:1%" type="submit" asp-area="" asp-controller="Kayit" asp-action="Index">Kayıt Ol</button>
-                </form>
+                @if(User.Identity.IsAuthenticated)
+                {
+                    <form class="form-inline">
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <span class="icon icon-comment" style=" margin-right: 10px"></span>
+                        </a>
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <span class="icon icon-like" style=" margin-right: 10px"></span>
+                        </a>
+                        <a asp-area="" asp-controller="Home" asp-action="Index">
+                            <span class="icon icon-profile" style=" margin-right: 10px"></span>
+                        </a>
+                        <button class="btn btn-warning text-white mb-2" style="margin-top:1%;" type="submit" asp-area="" asp-controller="Giris" asp-action="Cikis">Çıkış Yap</button>
+                    </form>
+                }
+                else
+                { 
+                    <form class="form-inline">
+                        <button class="btn btn-warning text-white mb-2" style="margin-top:1%; margin-right:5px" type="submit" asp-area="" asp-controller="Giris" asp-action="Index">Giriş Yap</button>
+                        <button class="btn btn-warning text-white mb-2" style="margin-top:1%" type="submit" asp-area="" asp-controller="Kayit" asp-action="Index">Kayıt Ol</button>
+                    </form>
+                }
             </div>    
         </nav>
         <div class="row justify-content-end">

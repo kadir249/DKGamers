@@ -14,7 +14,7 @@ namespace DKGamers.Controllers
         {
             var oyunlar = context.Oyun.ToList();
             oyunlar = oyunlar.OrderByDescending(x => x.PiyasayaSurulmeTarihi).ToList();
-            oyunlar = oyunlar.Take(5).ToList();
+            oyunlar = oyunlar.Take(10).ToList();
             return View(new OyunListViewModel()
             {
                 Oyunlar = oyunlar
