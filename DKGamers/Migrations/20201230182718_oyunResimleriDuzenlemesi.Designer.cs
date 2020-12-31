@@ -4,14 +4,16 @@ using DKGamers.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DKGamers.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20201230182718_oyunResimleriDuzenlemesi")]
+    partial class oyunResimleriDuzenlemesi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -87,6 +89,9 @@ namespace DKGamers.Migrations
                     b.Property<string>("KategoriAdi")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("OyunTuru")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("KategoriID");
 
                     b.ToTable("Kategori");
@@ -95,42 +100,74 @@ namespace DKGamers.Migrations
                         new
                         {
                             KategoriID = 1,
-                            KategoriAdi = "Aksiyon"
+                            KategoriAdi = "Aksiyon",
+                            OyunTuru = "Tek"
                         },
                         new
                         {
                             KategoriID = 2,
-                            KategoriAdi = "Korku"
+                            KategoriAdi = "Aksiyon",
+                            OyunTuru = "Cok"
                         },
                         new
                         {
                             KategoriID = 3,
-                            KategoriAdi = "Spor/Yarış"
+                            KategoriAdi = "Korku",
+                            OyunTuru = "Tek"
                         },
                         new
                         {
                             KategoriID = 4,
-                            KategoriAdi = "Strateji"
+                            KategoriAdi = "Korku",
+                            OyunTuru = "Cok"
                         },
                         new
                         {
                             KategoriID = 5,
-                            KategoriAdi = "Simülasyon"
+                            KategoriAdi = "Spor/Yaris",
+                            OyunTuru = "Tek"
                         },
                         new
                         {
                             KategoriID = 6,
-                            KategoriAdi = "Hayatta Kalma"
+                            KategoriAdi = "Spor/Yaris",
+                            OyunTuru = "Cok"
                         },
                         new
                         {
                             KategoriID = 7,
-                            KategoriAdi = "Tek Oyunculu"
+                            KategoriAdi = "Strateji",
+                            OyunTuru = "Tek"
                         },
                         new
                         {
                             KategoriID = 8,
-                            KategoriAdi = "Çok Oyunculu"
+                            KategoriAdi = "Strateji",
+                            OyunTuru = "Cok"
+                        },
+                        new
+                        {
+                            KategoriID = 9,
+                            KategoriAdi = "Simulasyon",
+                            OyunTuru = "Tek"
+                        },
+                        new
+                        {
+                            KategoriID = 10,
+                            KategoriAdi = "Simulasyon",
+                            OyunTuru = "Cok"
+                        },
+                        new
+                        {
+                            KategoriID = 11,
+                            KategoriAdi = "Hayatta Kalma",
+                            OyunTuru = "Tek"
+                        },
+                        new
+                        {
+                            KategoriID = 12,
+                            KategoriAdi = "Hayatta Kalma",
+                            OyunTuru = "Cok"
                         });
                 });
 
@@ -554,68 +591,48 @@ namespace DKGamers.Migrations
                         },
                         new
                         {
-                            OyunID = 1,
-                            KategoriID = 7
-                        },
-                        new
-                        {
                             OyunID = 2,
                             KategoriID = 1
                         },
                         new
                         {
                             OyunID = 2,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 2,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 2,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 3,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 3,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 3,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 3,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 4,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 4,
                             KategoriID = 2
                         },
                         new
                         {
-                            OyunID = 4,
-                            KategoriID = 6
+                            OyunID = 3,
+                            KategoriID = 1
+                        },
+                        new
+                        {
+                            OyunID = 3,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            OyunID = 3,
+                            KategoriID = 7
+                        },
+                        new
+                        {
+                            OyunID = 3,
+                            KategoriID = 8
                         },
                         new
                         {
                             OyunID = 4,
-                            KategoriID = 7
+                            KategoriID = 1
+                        },
+                        new
+                        {
+                            OyunID = 4,
+                            KategoriID = 3
+                        },
+                        new
+                        {
+                            OyunID = 4,
+                            KategoriID = 11
                         },
                         new
                         {
@@ -625,12 +642,7 @@ namespace DKGamers.Migrations
                         new
                         {
                             OyunID = 5,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 5,
-                            KategoriID = 8
+                            KategoriID = 2
                         },
                         new
                         {
@@ -639,126 +651,126 @@ namespace DKGamers.Migrations
                         },
                         new
                         {
-                            OyunID = 6,
-                            KategoriID = 7
-                        },
-                        new
-                        {
                             OyunID = 7,
                             KategoriID = 1
                         },
                         new
                         {
                             OyunID = 7,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 7,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 7,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 7,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 8,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 8,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 8,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 8,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 8,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 9,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 9,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 9,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 9,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 9,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 10,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 10,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 10,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 11,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 11,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 11,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 11,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 12,
                             KategoriID = 2
                         },
                         new
                         {
+                            OyunID = 7,
+                            KategoriID = 7
+                        },
+                        new
+                        {
+                            OyunID = 7,
+                            KategoriID = 8
+                        },
+                        new
+                        {
+                            OyunID = 7,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 7,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 8,
+                            KategoriID = 1
+                        },
+                        new
+                        {
+                            OyunID = 8,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            OyunID = 8,
+                            KategoriID = 7
+                        },
+                        new
+                        {
+                            OyunID = 8,
+                            KategoriID = 8
+                        },
+                        new
+                        {
+                            OyunID = 8,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 8,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 9,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 9,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 9,
+                            KategoriID = 7
+                        },
+                        new
+                        {
+                            OyunID = 9,
+                            KategoriID = 8
+                        },
+                        new
+                        {
+                            OyunID = 9,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 9,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 10,
+                            KategoriID = 7
+                        },
+                        new
+                        {
+                            OyunID = 10,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 11,
+                            KategoriID = 7
+                        },
+                        new
+                        {
+                            OyunID = 11,
+                            KategoriID = 8
+                        },
+                        new
+                        {
+                            OyunID = 11,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 11,
+                            KategoriID = 10
+                        },
+                        new
+                        {
                             OyunID = 12,
                             KategoriID = 4
                         },
@@ -770,217 +782,217 @@ namespace DKGamers.Migrations
                         new
                         {
                             OyunID = 13,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 13,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 13,
                             KategoriID = 7
+                        },
+                        new
+                        {
+                            OyunID = 13,
+                            KategoriID = 9
                         },
                         new
                         {
                             OyunID = 14,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 15,
                             KategoriID = 5
                         },
                         new
                         {
-                            OyunID = 14,
+                            OyunID = 15,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 15,
                             KategoriID = 7
                         },
                         new
                         {
                             OyunID = 15,
-                            KategoriID = 3
+                            KategoriID = 8
                         },
                         new
                         {
                             OyunID = 15,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 15,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 16,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 16,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 16,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 16,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 17,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 17,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 17,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 17,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 18,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 18,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 18,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 18,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 19,
+                            KategoriID = 1
+                        },
+                        new
+                        {
+                            OyunID = 19,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            OyunID = 19,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 19,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 20,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 20,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 21,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 21,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 21,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 21,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 22,
+                            KategoriID = 1
+                        },
+                        new
+                        {
+                            OyunID = 22,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            OyunID = 22,
+                            KategoriID = 5
+                        },
+                        new
+                        {
+                            OyunID = 22,
+                            KategoriID = 6
+                        },
+                        new
+                        {
+                            OyunID = 23,
+                            KategoriID = 1
+                        },
+                        new
+                        {
+                            OyunID = 23,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            OyunID = 23,
+                            KategoriID = 3
+                        },
+                        new
+                        {
+                            OyunID = 23,
                             KategoriID = 4
                         },
                         new
                         {
-                            OyunID = 15,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 15,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 15,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 16,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 16,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 16,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 16,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 17,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 17,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 17,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 17,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 18,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 18,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 18,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 18,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 19,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 19,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 19,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 19,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 20,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 20,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 20,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 21,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 21,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 21,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 21,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 22,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 22,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 22,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 22,
-                            KategoriID = 8
+                            OyunID = 23,
+                            KategoriID = 9
                         },
                         new
                         {
                             OyunID = 23,
-                            KategoriID = 1
+                            KategoriID = 10
                         },
                         new
                         {
                             OyunID = 23,
-                            KategoriID = 2
+                            KategoriID = 11
                         },
                         new
                         {
                             OyunID = 23,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 23,
-                            KategoriID = 6
-                        },
-                        new
-                        {
-                            OyunID = 23,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 23,
-                            KategoriID = 8
+                            KategoriID = 12
                         },
                         new
                         {
@@ -990,17 +1002,12 @@ namespace DKGamers.Migrations
                         new
                         {
                             OyunID = 24,
-                            KategoriID = 2
+                            KategoriID = 3
                         },
                         new
                         {
                             OyunID = 24,
-                            KategoriID = 6
-                        },
-                        new
-                        {
-                            OyunID = 24,
-                            KategoriID = 7
+                            KategoriID = 11
                         },
                         new
                         {
@@ -1010,22 +1017,12 @@ namespace DKGamers.Migrations
                         new
                         {
                             OyunID = 25,
-                            KategoriID = 2
+                            KategoriID = 3
                         },
                         new
                         {
                             OyunID = 25,
-                            KategoriID = 6
-                        },
-                        new
-                        {
-                            OyunID = 25,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 26,
-                            KategoriID = 1
+                            KategoriID = 11
                         },
                         new
                         {
@@ -1035,102 +1032,107 @@ namespace DKGamers.Migrations
                         new
                         {
                             OyunID = 26,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 27,
-                            KategoriID = 2
-                        },
-                        new
-                        {
-                            OyunID = 27,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 27,
-                            KategoriID = 6
-                        },
-                        new
-                        {
-                            OyunID = 27,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 27,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 28,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 28,
-                            KategoriID = 2
-                        },
-                        new
-                        {
-                            OyunID = 28,
-                            KategoriID = 6
-                        },
-                        new
-                        {
-                            OyunID = 28,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 28,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 29,
                             KategoriID = 4
                         },
                         new
                         {
-                            OyunID = 29,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 6
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 30,
+                            OyunID = 27,
                             KategoriID = 3
                         },
                         new
                         {
+                            OyunID = 27,
+                            KategoriID = 4
+                        },
+                        new
+                        {
+                            OyunID = 27,
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 27,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 27,
+                            KategoriID = 11
+                        },
+                        new
+                        {
+                            OyunID = 27,
+                            KategoriID = 12
+                        },
+                        new
+                        {
+                            OyunID = 28,
+                            KategoriID = 1
+                        },
+                        new
+                        {
+                            OyunID = 28,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            OyunID = 28,
+                            KategoriID = 3
+                        },
+                        new
+                        {
+                            OyunID = 28,
+                            KategoriID = 4
+                        },
+                        new
+                        {
+                            OyunID = 28,
+                            KategoriID = 11
+                        },
+                        new
+                        {
+                            OyunID = 28,
+                            KategoriID = 12
+                        },
+                        new
+                        {
+                            OyunID = 29,
+                            KategoriID = 2
+                        },
+                        new
+                        {
+                            OyunID = 29,
+                            KategoriID = 8
+                        },
+                        new
+                        {
+                            OyunID = 29,
+                            KategoriID = 10
+                        },
+                        new
+                        {
+                            OyunID = 29,
+                            KategoriID = 12
+                        },
+                        new
+                        {
                             OyunID = 30,
                             KategoriID = 5
                         },
                         new
                         {
                             OyunID = 30,
-                            KategoriID = 7
+                            KategoriID = 6
                         },
                         new
                         {
                             OyunID = 30,
-                            KategoriID = 8
+                            KategoriID = 9
+                        },
+                        new
+                        {
+                            OyunID = 30,
+                            KategoriID = 10
                         });
                 });
 

@@ -21,6 +21,8 @@
     <Compile Remove="Migrations\20201229122350_oyunDeneme3.Designer.cs" />
     <Compile Remove="Migrations\20201229123544_oyunDeneme3.cs" />
     <Compile Remove="Migrations\20201229123544_oyunDeneme3.Designer.cs" />
+    <Compile Remove="Migrations\20201231110958_oyunKategorisiDuzenleme.cs" />
+    <Compile Remove="Migrations\20201231110958_oyunKategorisiDuzenleme.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

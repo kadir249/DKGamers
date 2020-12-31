@@ -4,14 +4,16 @@ using DKGamers.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DKGamers.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20201230191518_oyunDuzenleme")]
+    partial class oyunDuzenleme
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -105,7 +107,7 @@ namespace DKGamers.Migrations
                         new
                         {
                             KategoriID = 3,
-                            KategoriAdi = "Spor/Yarış"
+                            KategoriAdi = "Spor/Yaris"
                         },
                         new
                         {
@@ -115,7 +117,7 @@ namespace DKGamers.Migrations
                         new
                         {
                             KategoriID = 5,
-                            KategoriAdi = "Simülasyon"
+                            KategoriAdi = "Simulasyon"
                         },
                         new
                         {
@@ -125,12 +127,12 @@ namespace DKGamers.Migrations
                         new
                         {
                             KategoriID = 7,
-                            KategoriAdi = "Tek Oyunculu"
+                            KategoriAdi = "Tek"
                         },
                         new
                         {
                             KategoriID = 8,
-                            KategoriAdi = "Çok Oyunculu"
+                            KategoriAdi = "Cok"
                         });
                 });
 

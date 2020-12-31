@@ -1,21 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DKGamers.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DKGamers.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace DKGamers.Controllers
 {
-    public class PopulerController : Controller
+    public class OyunlarController : Controller
     {
         private Context context = new Context();
         public IActionResult Index()
         {
-            var oyunlar = context.Oyun.ToList();
-            oyunlar = oyunlar.OrderByDescending(x => x.GoruntulenmeSayisi).ToList();
-            oyunlar = oyunlar.Take(10).ToList();
+            var oyunlar = context.Oyun.OrderBy(o => o.OyunAdi).ToList();
+
             return View(new OyunListViewModel()
             {
                 Oyunlar = oyunlar

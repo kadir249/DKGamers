@@ -8,17 +8,11 @@ using System.Threading.Tasks;
 namespace DKGamers.Models
 {
     [Authorize(Roles = "user")]
-    public class Kayit
+    public class Profil
     {
-        [Required]
+        [Key]
+        public string KullaniciID { get; set; }
         public string KullaniciAdi { get; set; }
-
-        [Required]
-        [DataType(DataType.Password)]
-        public string Sifre { get; set; }
-        
-        [Required]
-        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
     }
 }

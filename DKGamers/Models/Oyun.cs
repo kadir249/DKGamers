@@ -13,14 +13,10 @@ namespace DKGamers.Models
         public string Resim { get; set; }
         public string OyunAdi { get; set; }
         public DateTime PiyasayaSurulmeTarihi { get; set; }
-
         public string Yayinci { get; set; }
         public string Gelistirici { get; set; }
         public string Aciklama { get; set; }
-
-        //public string Yorum { get; set; }
         public int BegenilmeSayisi { get; set; }
-
         public int GoruntulenmeSayisi { get; set; }
         public IList<OyunKategorisi> OyunKategorileri { get; set; }
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DKGamers.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DKGamers.Controllers
 {
@@ -22,7 +23,7 @@ namespace DKGamers.Controllers
         }
         public IActionResult Detail(int id)
         {
-            var oyun = context.Oyun.FirstOrDefault(i => i.OyunID == id);
+            Oyun oyun = context.Oyun.Include(i => i.OyunKategorileri).ThenInclude(i => i.Kategori).FirstOrDefault(i => i.OyunID == id);
             return View(oyun);
         }
     }

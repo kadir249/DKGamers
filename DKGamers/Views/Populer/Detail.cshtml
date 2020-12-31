@@ -7,6 +7,13 @@
         </div>
         <div class="col-7">
             <p style="color:white;">Oyun: @Model.OyunAdi</p>
+            <p style="color:white;">
+                Türü: @foreach (var item in Model.OyunKategorileri)
+                        {
+                            @item.Kategori.KategoriAdi
+                            <span>,</span>
+                        }
+            </p>
             <p style="color:white;">Çıkış Tarihi: @Model.PiyasayaSurulmeTarihi.ToShortDateString()</p>
             <p style="color:white;">Geliştirici: @Model.Gelistirici</p>
             <p style="color:white;">Yayıncı: @Model.Yayinci</p>
