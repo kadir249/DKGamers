@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DKGamers.Models;
 using Microsoft.EntityFrameworkCore;
+using DKGamers.Data;
 
 namespace DKGamers.Controllers
 {

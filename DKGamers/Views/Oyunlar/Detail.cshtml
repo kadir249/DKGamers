@@ -18,7 +18,10 @@
             <p style="color:white;">Geliştirici: @Model.Oyun.Gelistirici</p>
             <p style="color:white;">Yayıncı: @Model.Oyun.Yayinci</p>
             <p style="color:white;">Açıklama: @Model.Oyun.Aciklama</p>
-             <a href="/Favori/FavoriyeEkle/@Model.Oyun.OyunID" class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-send"></span></a>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a href="/Favori/FavoriyeEkle/@Model.Oyun.OyunID" class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-send"></span></a>
+            }
         </div>
     </div>
     @if (User.Identity.IsAuthenticated)

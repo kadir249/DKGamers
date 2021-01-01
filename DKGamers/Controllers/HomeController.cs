@@ -1,4 +1,5 @@
 ﻿
+using DKGamers.Data;
 using DKGamers.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

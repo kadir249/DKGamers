@@ -1,4 +1,5 @@
-﻿using DKGamers.Identity;
+﻿using DKGamers.Data;
+using DKGamers.Identity;
 using DKGamers.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
