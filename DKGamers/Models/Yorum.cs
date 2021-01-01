@@ -15,7 +15,6 @@ namespace DKGamers.Models
         public DateTime OlusturulmaTarihi { get; set; }
         public int OyunID { get; set; }
         public Oyun Oyun { get; set; }
-        public string KullaniciID { get; set; }
-        public Giris Giris { get; set; }
+        public string KullaniciAdi { get; set; }
     }
 }

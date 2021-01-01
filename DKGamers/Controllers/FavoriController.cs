@@ -2,6 +2,7 @@
 using DKGamers.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,16 +20,25 @@ namespace DKGamers.Controllers
             kullaniciYoneticisi = _kullaniciYoneticisi;
         }
         public IActionResult Index()
-        {           
-            favori.KullaniciID = kullaniciYoneticisi.GetUserId(User);
-            return View();
+        {
+            var user = kullaniciYoneticisi.FindByNameAsync(User.Identity.Name).Result;
+            var favoriler = context.Favori.Include(i=>i.Oyun).Where(i => i.KullaniciAdi == user.UserName).ToList();
+            return View(new FavoriListViewModel()
+            {
+                Favoriler=favoriler
+            });
         }
 
-        [HttpPost]
         public IActionResult FavoriyeEkle(int id)
         {
-            favori.KullaniciID = kullaniciYoneticisi.GetUserId(User);
-            favori.OyunID = id;
+            var user = kullaniciYoneticisi.FindByNameAsync(User.Identity.Name).Result;
+            var Favori = new Favori()
+            {
+                KullaniciAdi = user.UserName,
+                OyunID = id,
+            };
+            context.Add(Favori);
+            context.SaveChanges();
             
             return RedirectToAction("Index");
         }

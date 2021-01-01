@@ -4,40 +4,22 @@ using DKGamers.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DKGamers.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20210101111544_deneme")]
+    partial class deneme
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("DKGamers.Models.Favori", b =>
-                {
-                    b.Property<int>("FavoriID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("KullaniciAdi")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("OyunID")
-                        .HasColumnType("int");
-
-                    b.HasKey("FavoriID");
-
-                    b.HasIndex("OyunID");
-
-                    b.ToTable("Favori");
-                });
 
             modelBuilder.Entity("DKGamers.Models.Haber", b =>
                 {
@@ -1180,15 +1162,6 @@ namespace DKGamers.Migrations
                     b.ToTable("Yorum");
                 });
 
-            modelBuilder.Entity("DKGamers.Models.Favori", b =>
-                {
-                    b.HasOne("DKGamers.Models.Oyun", "Oyun")
-                        .WithMany()
-                        .HasForeignKey("OyunID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("DKGamers.Models.OyunKategorisi", b =>
                 {
                     b.HasOne("DKGamers.Models.Kategori", "Kategori")
@@ -1207,7 +1180,7 @@ namespace DKGamers.Migrations
             modelBuilder.Entity("DKGamers.Models.Yorum", b =>
                 {
                     b.HasOne("DKGamers.Models.Oyun", "Oyun")
-                        .WithMany("Yorumlar")
+                        .WithMany()
                         .HasForeignKey("OyunID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

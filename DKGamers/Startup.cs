@@ -34,7 +34,7 @@ namespace DKGamers
                 options.Password.RequireDigit = false;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
-                options.Password.RequiredLength = 8;
+                options.Password.RequiredLength = 3;
                 options.Password.RequireNonAlphanumeric = false;
                 options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedEmail = false;

@@ -13,7 +13,7 @@ namespace DKGamers.Controllers
     {
         private UserManager<Kullanici> kullaniciYoneticisi;
 
-        public ProfilController(UserManager<Kullanici> _kullaniciYoneticisi, SignInManager<Kullanici> _girisYoneticisi)
+        public ProfilController(UserManager<Kullanici> _kullaniciYoneticisi)
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
         }
