@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace DKGamers.Controllers
 {
-
     public class YorumController : Controller
     {
         private Context context = new Context();
@@ -22,9 +21,19 @@ namespace DKGamers.Controllers
         }
         public IActionResult Index()
         {
+            var oyunlar = context.Oyun.ToList();
             var user = kullaniciYoneticisi.FindByNameAsync(User.Identity.Name).Result;
             var yorumlar = context.Yorum.Where(i => i.KullaniciAdi == user.UserName).ToList();
             return View(yorumlar);
+        }
+
+        public IActionResult YorumuSil(int id)
+        {
+            Yorum yorum = context.Yorum.FirstOrDefault(i => i.YorumID == id);
+            context.Remove(yorum);
+            context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }

@@ -23,29 +23,38 @@ namespace DKGamers.Controllers
         public IActionResult Index()
         {
             var user = kullaniciYoneticisi.FindByNameAsync(User.Identity.Name).Result;
-            var favoriler = context.Favori.Include(i=>i.Oyun).Where(i => i.KullaniciAdi == user.UserName).ToList();
+            var favoriler = context.Favori.Include(i => i.Oyun).Where(i => i.KullaniciAdi == user.UserName).ToList();
             return View(new FavoriListViewModel()
             {
-                Favoriler=favoriler
+                Favoriler = favoriler
             });
         }
 
         public IActionResult FavoriyeEkle(int id)
         {
+
             var user = kullaniciYoneticisi.FindByNameAsync(User.Identity.Name).Result;
-            var Favori = new Favori()
+
+            if (!context.Favori.Any(i => i.OyunID == id))
             {
-                KullaniciAdi = user.UserName,
-                OyunID = id,
-            };
-            context.Add(Favori);
-            context.SaveChanges();
-            
+                var Favori = new Favori()
+                {
+                    KullaniciAdi = user.UserName,
+                    OyunID = id,
+                };
+                context.Add(Favori);
+                context.SaveChanges();
+            }
+
             return RedirectToAction("Index");
         }
-        [HttpPost]
+
         public IActionResult FavoridenCikar(int id)
         {
+            Favori oyun = context.Favori.FirstOrDefault(i => i.OyunID == id);
+            context.Remove(oyun);
+            context.SaveChanges();
+
             return RedirectToAction("Index");
         }
     }

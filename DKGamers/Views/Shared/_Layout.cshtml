@@ -32,7 +32,16 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Hakkinda" asp-action="Index">Hakkımızda</a>
                         </li>
-                    </ul>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            @if (User.IsInRole("admin"))
+                            { 
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Admin" asp-action="Index">Admin Paneli</a>
+                                </li>
+                            }
+                        }
+                        </ul>
                 </div>
                 @if(User.Identity.IsAuthenticated)
                 {

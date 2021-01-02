@@ -27,7 +27,7 @@ namespace DKGamers
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<IdentityContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<Kullanici, IdentityRole>().AddEntityFrameworkStores<IdentityContext>().AddDefaultTokenProviders();
+            services.AddIdentity<Kullanici, IdentityRole>().AddEntityFrameworkStores<IdentityContext>().AddDefaultTokenProviders().AddDefaultUI();
             services.AddControllersWithViews();
             services.Configure<IdentityOptions>(options =>
             {

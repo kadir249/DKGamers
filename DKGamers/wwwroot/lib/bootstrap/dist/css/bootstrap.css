@@ -10896,3 +10896,11 @@ dropbtn {
 .icon-like:focus {
     background-image: url(https://icons.getbootstrap.com/icons/star-fill.svg);
 }
+
+.icon-admin {
+    background-image: url(https://icons.getbootstrap.com/icons/people-fill.svg);
+}
+.icon-admin:hover,
+.icon-admin:focus {
+    background-image: url(https://icons.getbootstrap.com/icons/people-fill.svg);
+}

@@ -9,5 +9,6 @@ namespace DKGamers.Models
     {
         public Oyun Oyun { get; set; }
         public List<Yorum> Yorumlar { get; set; }
+        public bool favorilerdemi { get; set; }
     }
 }

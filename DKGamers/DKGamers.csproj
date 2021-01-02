@@ -23,6 +23,8 @@
     <Compile Remove="Migrations\20201229123544_oyunDeneme3.Designer.cs" />
     <Compile Remove="Migrations\20201231110958_oyunKategorisiDuzenleme.cs" />
     <Compile Remove="Migrations\20201231110958_oyunKategorisiDuzenleme.Designer.cs" />
+    <Compile Remove="Migrations\Identity\20210101164316_identityDeneme.cs" />
+    <Compile Remove="Migrations\Identity\20210101164316_identityDeneme.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

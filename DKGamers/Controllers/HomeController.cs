@@ -1,5 +1,4 @@
-﻿
-using DKGamers.Data;
+﻿using DKGamers.Data;
 using DKGamers.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -15,15 +14,16 @@ namespace DKGamers.Controllers
     {
         private Context context = new Context();
         private readonly ILogger<HomeController> _logger;
-       
+
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger = logger;   
+            _logger = logger;
         }
 
         public IActionResult Index()
         {
             var haberler = context.Haber.ToList();
+            haberler = haberler.Where(t => t.haberGosterilsinmi == false).ToList();
             haberler.Reverse();
 
             var oyunlar1 = context.Oyun.ToList();
@@ -50,7 +50,7 @@ namespace DKGamers.Controllers
         {
             return View();
         }
-        
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -7,6 +7,7 @@ namespace DKGamers.Models
 {
     public class OyunListViewModel
     {
+        internal bool favorilerdemi;
         public List<Oyun> Oyunlar { get; set; }
     }
 }
