@@ -88,15 +88,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-4613-a6d7-9423e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7fd12248-90ea-4cf0-b472-5430541e9da3",
+                            ConcurrencyStamp = "5d5bcb5f-6a7d-4d87-9259-0c691dd10ad6",
                             Email = "b181210057@sakarya.edu.tr",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "B181210057@SAKARYA.EDU.TR",
                             NormalizedUserName = "B181210057@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDpiEsgvNe3qKas/NE5VYkPFeeKizEgpUgL2eIrAkHShQwOOh3Oz75miPdp6GgWfdQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKeDUHmZS5snXZ4vRSyOitKMIQPtafhMFLJeOUifLSP3WPRXFFKtr4CT/A0VlCnRtg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "70c0c119-715d-4d1f-9002-1cec8d3bcb30",
+                            SecurityStamp = "fac12227-c322-4a96-8ee0-be05d87582cb",
                             TwoFactorEnabled = false,
                             UserName = "b181210057@sakarya.edu.tr"
                         },
@@ -104,15 +104,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-4713-a6d7-9423d041edb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "29f1ebcc-e0ca-4628-a875-fabdba15c508",
+                            ConcurrencyStamp = "07ba20b7-9bca-4389-847b-728dab64f45b",
                             Email = "b181210051@sakarya.edu.tr",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "B181210051@SAKARYA.EDU.TR",
                             NormalizedUserName = "B181210051@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAECBkJNhq7HF1btgVpSZCVA2l8fWJzbagPIaZch4bBG3FBVpcSRjYPXk+EofhmICbNg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEORIgjQnYPEWOgjzQ6vDJAVT8JOg2G/EMx9DBmC0gsc6uBdpKhjsve/tT/6YQ4Fm8A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "37d28d11-91fd-4312-adf1-8083c37a1929",
+                            SecurityStamp = "d94d2156-6bd9-4566-80be-a2e91c39a62c",
                             TwoFactorEnabled = false,
                             UserName = "b181210051@sakarya.edu.tr"
                         },
@@ -120,15 +120,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ef52b17a-1712-4bc8-be15-8c656dbcfd61",
+                            ConcurrencyStamp = "19bae098-26f8-4302-bc49-88fdb2c3918c",
                             Email = "bayram@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BAYRAM@OUTLOOK.COM",
                             NormalizedUserName = "BAYRAM57",
-                            PasswordHash = "AQAAAAEAACcQAAAAECAq0cBmyfzJuqxkH7asQUfXdGORf4lt964yEAI7nyKGAEZq/xYlEj3pTga35oBRCQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAECX9Xxy2vdAy6bBvw6ltkoESYVfKPf1O42Vu4grQouTEpUJXNszRA7s4/uDmWds4bQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4cb0dfb1-6ab5-4e1c-8482-64ce2ca0c5fd",
+                            SecurityStamp = "c2399b97-581a-4081-9b13-a9329b57c32f",
                             TwoFactorEnabled = false,
                             UserName = "bayram57"
                         },
@@ -136,15 +136,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e217364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a3e7c049-d66c-43b2-9956-f19c5e3ffa14",
+                            ConcurrencyStamp = "6b3b1329-8533-4c50-b979-2dd02d293bb4",
                             Email = "batuhan34@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BATUHAN34@OUTLOOK.COM",
                             NormalizedUserName = "BATUHAN34",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJjmh1XDPSgTVH1DH3QQCjMa6QXjh/sWZ3ou5SHUBZ1nKo7p9uT4OeKp9b0UYmINtw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDskb4ZQgvVfxOrfDsH+PnoLNLNxTVYPsUq7bKRaTgp/4DZG6y9UD2jOvg/znAUWAA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8e86cc83-6a19-4c0d-95bf-b59e68ad377c",
+                            SecurityStamp = "9a5ef9d7-3cc0-4329-897f-cf3069d25f48",
                             TwoFactorEnabled = false,
                             UserName = "batuhan34"
                         },
@@ -152,15 +152,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e317364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "40c131e8-300d-47ad-a6c9-e0cb9604f3ff",
+                            ConcurrencyStamp = "a9d42e43-cd19-40d0-8ea8-0ad10f8df92b",
                             Email = "berk77@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BERK77@OUTLOOK.COM",
                             NormalizedUserName = "BERK77",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKs0VLEhR5Kn/NcHbLihxp2si/mkkup0PLVmUfxuGo6SvCljtsFDNnKNjqvMxCgYbg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELFJof6MFqbKqsS2DiMJJytizjR4pYXVwzjsNNUjF0DWhH+q4TYXnyVojAqwdERw4g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "218a2016-40ee-4f16-bba0-781130b62539",
+                            SecurityStamp = "fde20041-5b3a-49d6-acf2-f6544f6572b5",
                             TwoFactorEnabled = false,
                             UserName = "berk77"
                         });
@@ -323,9 +323,6 @@ namespace DKGamers.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("BegenilmeSayisi")
-                        .HasColumnType("int");
-
                     b.Property<string>("Gelistirici")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -360,7 +357,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 1,
                             Aciklama = "Oyun Hades’in oğlu Zagreus’un babasına baş kaldırmasını konu almaktadır. Zagreus babasına yeraltı dünyasından çıkacağını söyler. Babasını bunu başaramayacağını söylese de Zagreus yeraltı dünyasından çıkmak için yola koyulur. Bu yolculukta Zagreus’un karşısına birçok zorlu düşman çıkacaktır. Oyuncular Zagreus’u yöneterek zorlu düşmanlarla savaşacak; elde edindikleri yeni eşyalarla güçlenmeye ve Zagreus’un amacına ulaşmasını sağlamaya çalışacaktır.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Supergiant Games",
                             GoruntulenmeSayisi = 814,
                             OyunAdi = "Hades",
@@ -373,7 +369,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 2,
                             Aciklama = "Oyun Kaliforniya eyaletinin güneyini temel alarak oluşturulmuş olan San Andreas eyaletinde geçmektedir. San Andreas, büyük ölçüde Los Angeles şehrine dayanılarak oluşturulmuş olan Los Santos adlı şehirden (GTA San Andreas oyunundakinin güncellenmiş hali) ve büyük kırsal alanlardan oluşmaktadır. Seride bir ilk olarak oyunda üç ana karakter bulunmaktadır: Michael De Santa, Trevor Philips ve Franklin Clinton.  Oyundaki üç karakterden her birinin farklı alanlarda farklı yetenekleri ve güçleri vardır. Oyuncular tek oyunculu modda oyunun hikayesini oynayarak ya da çok oyunculu modda kendi oluşturdukları karakterlerle başka oyuncularla oynayarak zaman geçirebilirler.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Rockstar North",
                             GoruntulenmeSayisi = 1536,
                             OyunAdi = "Grand Theft Auto V",
@@ -386,7 +381,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 3,
                             Aciklama = "Tom Clancy's Rainbow Six Siege, oyuncuların bir anti-terörist birimi olan Rainbow takımından değişik operatörler olarak oynayabileceği birinci şahıs nişancı türünde bir video oyunudur. Bu operatörlerin değişik uyrukları, ekipmanları, yetenekleri ve işlevleri vardır. Oyunda takım çalışması kuşatma anlamına gelen Siege ismiyle desteklenirken, oyuncuların düşmanlarını yenebilmesi için güçlerini birleştirmeleri amaçlanmıştır. Aynı zamanda oyuncular arasındaki iletişimi güçlendirmek için oyun içinde sesli olarak iletişim sağlanabilmektedir. Oyuncular aynı zamanda oyun başlamadan önce saldırılarının veya savunmalarının ne şekilde olacağıyla ilgili plan yapabilmektedir. Saldırı takımı çevreyi araştırmak, düşmanlarının ve hedeflerin yerlerini tespit edebilmek için küçük dronelar gönderebilirken, savunma takımı da saldırıyı önleyebilmek için kapı, duvar gibi yapıları güçlendirmek amacıyla çeşitli barikatlar döşeyebilmektedir. Saldırı takımı, saldırı için birden fazla başlama noktasından birini seçebilmektedir. Oyundaki haritalar çok büyük değildir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Ubisoft Montreal",
                             GoruntulenmeSayisi = 659,
                             OyunAdi = "Tom Clancy's Rainbow Six Siege",
@@ -399,7 +393,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 4,
                             Aciklama = "4A Games'in hazırladığı Metro Exodus, en sürükleyici oyun dünyalarından birinde ölümcül dövüşleri ve gizliliği, keşif ve hayatta kalma korkusuyla birleştiren destansı, hikaye tabanlı bir birinci şahıs nişancı oyunudur. Dmitry Glukhovsky'nin romanlarından esinlenilmiştir.Oyun 2036 yılında geçmektedir.Oyunda nükleer savaşın dünyayı mahvetmesinin üstünden çeyrek yüzyıl geçmiştir, hayatta kalan birkaç bin kişi Moskova'nın harabelerinin altında, Metro tünellerinde hayatta kalmaya çalışmaktadır. Bu kişiler zehirli elementlere dayanmış, mutant yaratıklarla ve doğa üstü korkularla savaşmış, iç savaşın yaralarını tatmışdır. Oyunun amacı , Artyom olarak Metro'dan kaçmak ve Doğuda yeni bir yaşam aramak için kıyamet sonrası vahşi Rus doğasında geçen inanılmaz bir macerada bir grup Spartalı Korucuya öncülük etmektir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "4A Games",
                             GoruntulenmeSayisi = 278,
                             OyunAdi = "Metro Exodus",
@@ -412,7 +405,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 5,
                             Aciklama = "Sea of Thieves, birinci şahıs bakış açısıyla oynanan, korsan temalı bir aksiyon-macera kooperatifi çok oyunculu oyunudur. Bir grup oyuncu bir korsan gemisi vasıtasıyla açık bir dünyayı dolaşıp keşfetmekte ve direksiyon, kaldırma yelkenleri, navigasyon, ateş topları ve diğer görevler gibi farklı roller üstlenmektedir. Oyuncular araştırmalara başlar, yağma tutar ve diğer oyuncularla savaşa girerler. Thieves Denizi, oyuncuların gruplarının maceraları boyunca düzenli olarak karşılaşacakları ortak bir dünya oyunu. Oyun, karikatürize bir sanat stiline ve oyuncuların gemi toplarına atılmasına izin veren abartılı fizik özelliklerine sahiptir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Rare Ltd",
                             GoruntulenmeSayisi = 777,
                             OyunAdi = "Sea of Thieves",
@@ -425,7 +417,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 6,
                             Aciklama = "Cyberpunk 2077 güç, gösteriş ve vücut modifikasyonu çılgınlığına kapılmış Night City kümekentinde geçen bir açık dünya aksiyon macera hikâyesidir. Kanun kaçağı paralı asker V olarak oyna ve ölümsüzlüğün anahtarı olan eşsiz bir implantın peşine düş. Karakterinin sibergereçlerini, yeteneklerini ve oynanış stilini özelleştir; kararların hikâyeyi ve dünyayı değiştirdiği devasa bir şehri keşfet.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "CD Projekt Red",
                             GoruntulenmeSayisi = 2956,
                             OyunAdi = "Cyberpunk 2077",
@@ -438,7 +429,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 7,
                             Aciklama = "Hearts of Iron IV Paradox Development Studio tarafından geliştirilen ve Paradox Interactive tarafından yayımlanan strateji oyunudur. Hearts of Iron III'ün devam oyunudur, diğer Hearts of Iron serisi oyunları gibi II. Dünya Savaşına odaklanır. Oyuncular 1936 ve 1939 olmak üzere iki başlangıç tarihinden birini seçebilir. Daha sonra oyuncular oyuna başlamak için ülke seçer. Oyuncuların amacı seçtikleri ülkeyle savaşta zafer almaya çalışmaktır. Bu amaca ulaşmak için oyuncuların ülkelerini doğru yönetmesi ve geliştirmesi gerekmektedir. ",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Paradox Development Studio",
                             GoruntulenmeSayisi = 1267,
                             OyunAdi = "Hearts of Iron IV",
@@ -451,7 +441,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 8,
                             Aciklama = "Mount & Blade II: Bannerlord, orta çağ savaş simülasyon ve rol-yapma oyunu olan Mount & Blade: Warband’in heyecanla beklenen devamı niteliğindedir. 200 yıl öncesinde geçen, detaylı dövüş sistemini ve Kalradya dünyasını daha kapsamlı ele alır. Dağlardaki sığınakları talan edin, şehirlerin arka sokaklarında gizli suç imparatorlukları kurun ya da güç mücadelenizde savaş keşmekeşinin içine atılın. Engin Kalradya kıtasında keşfe çıkın, baskınlar düzenleyin ve yolunuz boyunca dostlar düşmanlar edinin. Kendi ordunuzu yetiştirip savaşa sokun; bir yandan birliklerinizi komuta ederken diğer yandan onların yanında aksiyonun kalbine dalıp düşmanla çarpışın.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "TaleWorlds Entertainment",
                             GoruntulenmeSayisi = 1453,
                             OyunAdi = "Mount & Blade II: Bannerlord",
@@ -464,7 +453,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 9,
                             Aciklama = "Bir menajerlik oyunudur. Oyuncular istedikleri takımı alır ve yönetir. Oyunun amacı, seçtiğin takımı dünyanın en iyi takımı yapmak ve şampiyonluklar yaşamaktır. Oyuncular altyapıdan oyuncu yetiştirme, takım taktiğini belirleme, oyuncu transfer etme gibi işlemleri yapabilir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Sports Interactive",
                             GoruntulenmeSayisi = 853,
                             OyunAdi = "Football Manager 2021",
@@ -477,7 +465,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 10,
                             Aciklama = "Oyunda oyuncular 1982'nin sonlarında, Arstotzka isimli komünist bir ülkedeki bir vize memurunu yönetmektedir. Oyuncuların oyunda yaptıkları tek şey gelen insanları ülkeye almak ya da almamak. Oyuncular ülkeye birisini alırken çok dikkatli olmalıdır. Çünkü aldıkları kişi bir casus, bir terörist olabilir. Oyuncular gün sonunda yaptıkları işlem sayısına göre para kazanmaktadır. Kazandıkları bu parayla da ailelerine bakmaya çalışırlar.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Lucas Pope",
                             GoruntulenmeSayisi = 293,
                             OyunAdi = "Papers, Please",
@@ -490,7 +477,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 11,
                             Aciklama = "Oyun, önceki oyunları Crusader Kings ve Crusader Kings II gibi, Orta Çağ'da geçen bir strateji ve hanedan simülasyonu oyunudur. Viking Çağı'ndan Bizans'ın Düşüşüne kadar devam etmektedir. Karakterler, 2D portreler yerine tam gövdeli, 3D olarak oluşturulmuş karakter modellerine sahiptir. Crusader Kings II'de olduğu gibi, istatistiklerini ve davranışlarını etkileyen özelliklere sahiptirler. Bir karakterin özelliklerine aykırı seçimler yapmak, o karakterin stresini artıracaktır. Oyunun genetik sistemi, karakterlerin bazı özelliklerini torunlarına aktarmalarına izin veriyor. Karakterler takip etmek için beş yaşam tarzından birini seçebilirler. Her yaşam tarzının, karakterlerin o yaşam tarzıyla ilgili becerileri geliştirmesine izin veren üç beceri ağacı vardır. ",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Paradox Development Studio",
                             GoruntulenmeSayisi = 1089,
                             OyunAdi = "Crusader Kings III",
@@ -503,7 +489,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 12,
                             Aciklama = "Dead by Daylight, çok heyecanlı ve oldukça rekabetçi, korku ve gerilim ögelerine sahip bir hayatta kalma ve gizlilik oyunudur. Oyunda bir kişi katil, dört kişi ise katilden kaçmaya çalışan kişileri oluşturuyor. Burada amaç, katilden kaçarak hayatta kalmak. Oyunda dilerseniz hayatta kalmaya çalışan birini oynayabilir, dilerseniz de onları öldürmeye çalışan katili oynayabilirsiniz. Oyunda katil olmak veya hayatta kalmaya çalışmanın yanı sıra, arkadaşlarınızla hayatta kalma modu sayesinde rastgele bir katil oyuncu ile karşılaşıp arkadaşlarınızla beraber hayatta kalmaya çalışabilirsiniz. Arkadaşlarını öldür modunda ise sadece arkadaşlarınızla karşılaşırsınız, ancak bu modda seviye kazanılmaz.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Behaviour Interactive Inc.",
                             GoruntulenmeSayisi = 952,
                             OyunAdi = "Dead by Daylight",
@@ -516,7 +501,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 13,
                             Aciklama = "Frostpunk, ısının yaşam anlamına geldiği ve her kararın bir bedelinin olduğu bir toplum olarak hayatta kalma oyunu. Tamamen donmuş bir dünyada, insanlar karşı konulamaz soğukla başa çıkabilmek için buhar gücü teknolojisini geliştiriyor. Oyunda sana düşen görevse dünyadaki son şehri inşa edip halkının hayatta kalması için gerekli araçları güvence altına almak.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "11 Bit Studios",
                             GoruntulenmeSayisi = 585,
                             OyunAdi = "Frostpunk",
@@ -529,7 +513,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 14,
                             Aciklama = "Euro Truck Simulator 2 bir tır simülasyon oyunudur. Oyun içerisinde verilen işlere göre tırları kullanıyorsunuz. Yük taşırken birçok yeri gezip görme fırsatınız da oluyor. Oyuna girdiğinizde bir hesap adınızı yazarak, ilgilendiğiniz bir markanın tırını seçip, uzun yol kaptanlığı maceranıza başlıyorsunuz. Oyunda seviye sistemi mevcut. Seviyeniz yükseldikçe puan kazanıyorsunuz. Puanları kullanmak için yetenek ağacı gibi bir sistem bulunuyor. Puanları hassas yük taşıma, tehlikeli madde taşıma, değerli yük taşıma gibi birçok alanda dağıtabiliyorsunuz. Euro Truck Simulator 2'de bir garajınız var. Seviyeniz yükseldikçe bu garajı da geliştirebiliyorsunuz. Oyunda iki farklı iş türü var. Diğer şirketlerden tek seferlik işleri alarak para kazanabilir ya da serbest çalışarak kendi aracınız ile şirketinize para kazandırabilirsiniz. Bir diğer özellik yeni bir araç aldığınızda aracınız için bir şoför kiralayabilir ve yetenekleri seçerek istediğiniz doğrultuda gelişmesini sağlayabilirsiniz.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "SCS Software",
                             GoruntulenmeSayisi = 1301,
                             OyunAdi = "Euro Truck Simulator 2",
@@ -542,7 +525,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 15,
                             Aciklama = "Şimdiye kadarki en kapsamlı F1 oyunu olan F1 2020 ile direksiyon başına geçip dünyanın en iyi sürücüleriyle yarışın. F1 2020 ile oyuncular ilk kez kendi F1 ekibini oluşturma imkanına kavuşuyor. Sürücü oluşturup, sponsor ve motor tedarikçisi seçip ekip arkadaşı tuttuktan sonra gruptaki 11. ekip olarak yarışabilirsiniz. Yeni tesisler oluşturun, zamanla ekibinizi geliştirin ve yarışlarda en tepeye oturun.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Codemasters",
                             GoruntulenmeSayisi = 702,
                             OyunAdi = "F1 2020",
@@ -555,7 +537,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 16,
                             Aciklama = "FIFA 21, Electronic Arts tarafından geliştirilen ve aynı şirketinin yayımcılığını yaptığı spor simülasyon video oyunudur. Oyunda dünyanın dört bir yanından 17.000’den fazla futbolcu, 700’den fazla takım, 90’dan fazla stadyum ve 30’dan fazla lig bulunmaktadır. Volta football, Ultimate Team, kariyer modu gibi birçok mod vardır. ",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Electronic Arts",
                             GoruntulenmeSayisi = 1487,
                             OyunAdi = "FIFA 21",
@@ -568,7 +549,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 17,
                             Aciklama = "NBA 2K21, dünyaca bilinen ve çok satan NBA 2K serisinin en yeni oyunudur. Sınıfının en iyisi oynanış, rekabetçi ve topluluk çevrimiçi özellikleri ve derin, çeşitli oyun modları üzerine yapılan heyecan verici geliştirmeler ile NBA 2K21, Everything is Game konsepti ile NBA basketbolu ve kültürünün tüm yönlerini benzersiz bir şekilde yaşamanızı sağlıyor.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Visual Concepts",
                             GoruntulenmeSayisi = 1006,
                             OyunAdi = "NBA 2K21",
@@ -581,7 +561,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 18,
                             Aciklama = "Bu ürün, bir futbol oyunu olan eFootball PES 2020'nin (2019 Eylül ayında yayınlanmıştı) güncellenmiş sürümüdür ve en yeni oyuncu verilerini ve kulüp kadrolarını içerir. Oyuncular eFootball PES 2020’de bulunan modları oynayabilmektedir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Konami Digital Entertainment",
                             GoruntulenmeSayisi = 1369,
                             OyunAdi = "eFootball PES 2021 SEASON UPDATE",
@@ -594,7 +573,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 19,
                             Aciklama = "Mishima klanının efsanevi yolculuğunun son bölümüne katıl, bitip tükenmek bilmeyen savaşlarının her bir aşamasının ardındaki gerçeği öğren. Gücünü Unreal Engine 4'ten alan TEKKEN 7, sahip olduğu yaratıcı dövüş mekanikleri sayesinde, muhteşem hikayelerle ilerleyen sinematik savaşların yanı sıra arkadaşlarınla ve rakiplerinle yapabileceğin müthiş düellolar da sunuyor.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "BANDAI NAMCO Studios Inc.",
                             GoruntulenmeSayisi = 918,
                             OyunAdi = "Tekken 7",
@@ -607,7 +585,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 20,
                             Aciklama = "Oyun, Birleşik Krallık'ın kurgusal temsili bölgelerinde geçmektedir ve 450'den fazla lisanslı araç sunmaktadır. Oyun, oyuncuların kendi yarışlarını yaratmalarını sağlayan bir pist yaratıcısına sahiptir. Oyun, her sunucu 72 oyuncuya kadar desteklenerek, öncekilerden gelen AI güdümlü 'drivatarlara' kıyasla, senkronize paylaşılan bir dünyada geçmektedir ve seriye değişen mevsimleri tanıtmasıyla dikkat çekmektedir. Oyun, çevrimdışı modda da oynanabilmektedir. ",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Playground Games",
                             GoruntulenmeSayisi = 1249,
                             OyunAdi = "Forza Horizon 4",
@@ -620,7 +597,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 21,
                             Aciklama = "DiRT Rally 2.0, en küçük hatanın yarışını sona erdirebileceğini bilerek, dünyanın dört bir yanından ikonik ralli konumları arasında en güçlü arazi araçlarıyla oynaman için sana meydan okuyor. Yeni özgün bir yol tutuşu modeli lastik seçimi ve yüzey deformasyonu dahil olmak üzere, en sürükleyici ve gerçekten odaklanmış arazi yarışı deneyimiyle içgüdülerine güvenmen gerekecek. Gerçek hayat arazi yarışı ortamları arasında sadece sana yol gösterecek yardımcı sürücün ve içgüdülerinle ralli aracını güçlendir. FIA World Rallycross şampiyonasının sekiz resmi turunda yarış, lisanslı Supercars ile tamamla ve serileri destekle. Takımını ve arabalarını yarış stratejilerinde geliştir ve hem tek oyuncu Kariyer Mücadelesi hem de rekabetçi bir çevrimiçi ortamda çeşitli Etkinlikler ve Şampiyonalar arasından ilerle.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Code Masters",
                             GoruntulenmeSayisi = 814,
                             OyunAdi = "Dirt Rally 2.0",
@@ -633,7 +609,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 22,
                             Aciklama = "Oyun temel olarak oyuncuların bir platform üzerinde birbirleri ile yarışarak en son hayatta kalan yarışmacı olmalarını amaçlıyor. Oyunda birçok engel ve güçlendirme bulunmaktadır. Çok oyunculu modda kamera en öndeki oyuncuya odaklıdır.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "DoubleDutch Games",
                             GoruntulenmeSayisi = 256,
                             OyunAdi = "SpeedRunners",
@@ -646,7 +621,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 23,
                             Aciklama = "The Forest Endnight Games tarafından geliştirilen ve yayınlanan bir hayatta kalma video oyunudur. Oyun, ana karakter Eric Leblanc ve oğlu Timmy'nin uçak kazasıyla ormanlık bir yarımadaya düşmesini ve adadan kurtulma çabasını konu alıyor. Oyun, birinci şahıs perspektifinden oynanan açık bir dünya ortamında, belirli görevler veya görevler olmadan doğrusal bir oynanışa sahiptir ve oyuncuyu hayatta kalma kararlarını vermesi gerekmektedir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Endnight Games Ltd",
                             GoruntulenmeSayisi = 1503,
                             OyunAdi = "The Forest",
@@ -659,7 +633,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 24,
                             Aciklama = "Outlast, Red Barrels tarafından yapılmış ve yayınlanmış bir hayatta kalma-korku oyunudur. Oyunda Miles Upshur adındaki bir gazetecinin, garip olaylar olduğu konuşulan bir akıl hastanesini haber yapmak için el kamerası ile tek başına girdikten sonra yaşadığı olaylar oynanmaktadır.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Red Barrels",
                             GoruntulenmeSayisi = 527,
                             OyunAdi = "Outlast",
@@ -672,7 +645,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 25,
                             Aciklama = "Outlast 2, ana karakter olan gazeteci Blake Langermann'ın, eşi Lynn ile beraber, Jane Doe ismindeki hamile bir kadının cinayetini araştırmak için gittikleri Arizona çöllerinde yaşadıklarını konu edinmektedir. Blake ve Lynn helikopterlerinin düşmesiyle birlikte ayrı düşecek, ve Blake de onu bulabilmek için, dünyanın son günlerini yaşadığına inanan aşırı dindar bir tarikatın hüküm sürdüğü Temple Gate kasabasında korkunç bir arayış içine girecektir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Red Barrels",
                             GoruntulenmeSayisi = 869,
                             OyunAdi = "Outlast 2",
@@ -685,7 +657,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 26,
                             Aciklama = "Phasmophobia, hayaletler hakkında dedektiflik oyunudur. Oyunda siz ve arkadaşlarınızın bulunduğu 4 kişilik bir ekiple perili evlerden akıl hastanelerine birçok farklı konumda birçok farklı hikayeyi aydınlatmaya çalışıyorsunuz. Oyunda farklı özelliklere sahip hayaletler bulunuyor. Bu hayaletleri yakalamak için de farklı farklı yollar gerekiyor.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Kinetic Games",
                             GoruntulenmeSayisi = 1104,
                             OyunAdi = "Phasmophobia",
@@ -698,7 +669,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 27,
                             Aciklama = "Green Hell, balta girmemiş Amazon yağmur ormanlarında geçen açık dünyalı bir hayatta kalma oyunu. Yiyeceğin veya ekipmanın olmaksızın ormanda tek başına bırakılmanın ardından hayatta kalmaya ve buradan kurtulmaya çalışıyorsun. Hayata sıkı sıkı tutunmak için mücadele verdiğin bu dayanıklılık yolculuğunda, yalnızlığın etkileri hem bedenini hem de zihnini derinden etkiliyor. Bu yolculuk sırasında dış dünyadan herhangi bir yardım almayacaksın. Gerçek hayatta kalma teknikleri öğrenmenin ardından sadece ellerini kullanarak barınaklar inşa etmen, araçlar üretmen ve avlanıp kendini koruyabilmek için silahlar yapman gerekecek. Sürekli olarak ormanın tehdidi altında, vahşi hayvanlara ve tropik hastalıklara karşı savaşacaksın. Ayrıca kendi zihninin kurduğu tuzaklara ve uçsuz bucaksız ormanın karanlık köşelerinde gizlenen korkulara göğüs germek zorunda kalacaksın.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Creepy Jar",
                             GoruntulenmeSayisi = 986,
                             OyunAdi = "Green Hell",
@@ -711,7 +681,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 28,
                             Aciklama = "Resident Evil 3, Capcom tarafından geliştirilen ve dağıtımı yapılan bir hayatta kalma-korku oyunudur. Jill Valentine, Umbrella'nın uyguladığı vahşete tanıklık eden Raccoon City'de kalan son insanlardan biridir. Umbrella onu durdurmak için büyük gizli silahı Nemesis'i kullanacaktır. 1999 yılında yayınlanan Resident Evil 3: Nemesis video oyunun yeniden yapılmış halidir.",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Capcom",
                             GoruntulenmeSayisi = 727,
                             OyunAdi = "Resident Evil 3",
@@ -724,7 +693,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 29,
                             Aciklama = "PlayerUnknown's Battlegrounds, oyunun sonunda hayatta kalmayı başarabilen tek bir oyuncunun kazanabildiği ve oyuncu topluluklarının görüşlerinin toplanarak ortaya çıkardığı bir oyundur. Tüm oyuncular oyuna eşit şartlarda, kelimenin tam manasıyla hiçbir şeyleri olmadan başlarlar; haritanın çeşitli yerlerinde bulunan silah & ekipman ve gereçleri toplayarak tek başlarına hayatta kalma mücadelesi verirler. UNREAL 4 Oyun Motoruna sahip, gerçekçi ve olağanüstü heyecanlı olan bu oyun, 8 kilometre karelik bir harita içerisinde oynanmaktadır. ",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Krafton",
                             GoruntulenmeSayisi = 1608,
                             OyunAdi = "PlayerUnknown's Battlegrounds",
@@ -737,7 +705,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 30,
                             Aciklama = "MotoGP 20 ile iyice eksiksiz hale getirilmiş olan menajerlik kariyeri modunun tüm heyecanını yaşa ve 2020 sezonuna katılıp katılmayacağına karar vererek resmi sürücülerle yarış ya da tamamen yeni bir takıma katıl. Motosikletini ve kıyafetini özelleştir! En iyi sponsor ve desen kombinasyonunu bul, renkleri ve malzemeleri seç. Her şeyi şık bir şekilde koordine et! Efsane sürücülerle yarış! MotoGP tarihini yeniden yaşamana olanak sağlayan yeni tarihi içerik ve yeni bir oyun modu seni bekliyor. Arkadaşlarına meydan oku, özel etkinlikler oluştur ve ayrı sonucular tarafından desteklenen yeni çok oyunculu mod deneyimi sayesinde yarış direktörü ol!",
-                            BegenilmeSayisi = 0,
                             Gelistirici = "Milestone",
                             GoruntulenmeSayisi = 108,
                             OyunAdi = "MotoGP 2020",
@@ -1406,14 +1373,14 @@ namespace DKGamers.Migrations
                         new
                         {
                             Id = "1",
-                            ConcurrencyStamp = "b0a99317-5c07-4ef5-897d-b90d71e30f93",
+                            ConcurrencyStamp = "fdf13695-03fe-4f0a-95ef-87da57370691",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "2",
-                            ConcurrencyStamp = "d6a3f907-5168-4a4e-a26c-12c5c5d4fa58",
+                            ConcurrencyStamp = "16b3c375-748a-4447-a824-3dc991441cf0",
                             Name = "user",
                             NormalizedName = "USER"
                         });
