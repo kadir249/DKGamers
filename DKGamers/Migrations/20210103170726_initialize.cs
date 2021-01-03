@@ -272,8 +272,8 @@ namespace DKGamers.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "2", "d6aa0dc4-6611-42e9-a82f-07d876d90dfd", "user", "USER" },
-                    { "1", "867d53ec-2abb-4d8a-b454-77217ba3b06f", "admin", "ADMIN" }
+                    { "2", "db2dc16f-53aa-4795-b74e-db5b05b77662", "user", "USER" },
+                    { "1", "3585744b-94cb-4004-ad41-5ec493af5247", "admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -281,11 +281,11 @@ namespace DKGamers.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "8e317364-e21d-5613-a6d7-9413e041cdb9", 0, "d6081b06-7331-4727-b4fd-de9e262ef30a", "berk77@outlook.com", true, false, null, "BERK77@OUTLOOK.COM", "BERK77", "AQAAAAEAACcQAAAAEA8CxmY+/kEOMNl7AlpU1DijndhcbGsNzhIVqgpDYQHss7wBTHPz885T/vEuyu4NzQ==", null, false, "c075b55f-8658-4720-ba6d-76970a3b5e2a", false, "berk77" },
-                    { "8e117364-e21d-4613-a6d7-9423e041cdb9", 0, "567abc0b-2687-4924-bf05-db85b07f4dea", "b181210057@sakarya.edu.tr", true, false, null, "B181210057@SAKARYA.EDU.TR", "B181210057@SAKARYA.EDU.TR", "AQAAAAEAACcQAAAAELNDX/2vZ8FUQf+oSaPacQNjvFoOb0opNq+TeTLEO/Io4gTkuF0dTehdV+R80gJT8w==", null, false, "a5a535f0-1cd0-4132-ae2b-a1829bec2e7b", false, "b181210057@sakarya.edu.tr" },
-                    { "8e117364-e21d-5613-a6d7-9413e041cdb9", 0, "f3f2195d-31d0-4f1f-b592-e420205b9781", "bayram@outlook.com", true, false, null, "BAYRAM@OUTLOOK.COM", "BAYRAM57", "AQAAAAEAACcQAAAAEAu/e3zqguX5BqcLYqBosJYJwQdn2tkA53FUqddXRMBT0UlCTrzpIFlEe1ngiuiffA==", null, false, "baf88338-4a0c-433a-8bdf-8a8f16bb5c3a", false, "bayram57" },
-                    { "8e117364-e21d-4713-a6d7-9423d041edb9", 0, "939a4985-acb9-4d9c-a25a-c6b59daca707", "b181210051@sakarya.edu.tr", true, false, null, "B181210051@SAKARYA.EDU.TR", "B181210051@SAKARYA.EDU.TR", "AQAAAAEAACcQAAAAEPjD8RoNGOcOYBbWqHWB56zzqPQ0QAClce6MK4+GIOBhDElLleg8hZeZopdr6MHXxw==", null, false, "d92d450d-c34c-419f-a0cc-7e7415a40e7b", false, "b181210051@sakarya.edu.tr" },
-                    { "8e217364-e21d-5613-a6d7-9413e041cdb9", 0, "d02c5356-6454-47bf-99e8-cba39e6b22d8", "batuhan34@outlook.com", true, false, null, "BATUHAN34@OUTLOOK.COM", "BATUHAN34", "AQAAAAEAACcQAAAAEJsgybpWjgEwnRWYx+CsebOcjxC8hHd3/u0KrEVFY7Ec4tpXiTE7GOgK1zIjtT1Azw==", null, false, "a2909874-8175-4427-a320-99240fc7f85e", false, "batuhan34" }
+                    { "8e317364-e21d-5613-a6d7-9413e041cdb9", 0, "6c3764a4-fb0d-4797-a279-a0c8bc7e7c3a", "berk77@outlook.com", true, false, null, "BERK77@OUTLOOK.COM", "BERK77", "AQAAAAEAACcQAAAAEGXPD0/K+gJJ3g5pMeuO6ufR/BWy0HsA6QA/cNKFH5iSwupJreOgXU4cuAk6Q/9tgg==", null, false, "777d8e71-7a6e-493d-8eab-68a23c85b11c", false, "berk77" },
+                    { "8e117364-e21d-4613-a6d7-9423e041cdb9", 0, "aecba056-84e5-4330-bbe3-3bf5a6b06f15", "b181210057@sakarya.edu.tr", true, false, null, "B181210057@SAKARYA.EDU.TR", "B181210057@SAKARYA.EDU.TR", "AQAAAAEAACcQAAAAEFQgT4hgmJleCE1x6XS3jFwUv5n/GCmeZGupf3TXQvKv7m/E6OPYm0ZixQCicU/ZDQ==", null, false, "bc83843d-6c25-4302-b51e-b1252921f39c", false, "b181210057@sakarya.edu.tr" },
+                    { "8e117364-e21d-5613-a6d7-9413e041cdb9", 0, "064d17ac-abee-440e-9509-2949886c16d9", "bayram@outlook.com", true, false, null, "BAYRAM@OUTLOOK.COM", "BAYRAM57", "AQAAAAEAACcQAAAAEEBlaZZxxKldBk0CK93MxqaxjeAZ88i6a+8yzP2ezn97JZZzbZTvyzhd9+X2XG4ycw==", null, false, "5c26df39-0e54-4fa5-90f4-c0bc3dc837d9", false, "bayram57" },
+                    { "8e117364-e21d-4713-a6d7-9423d041edb9", 0, "610a909a-c801-434f-a72d-0cd093233d66", "b181210051@sakarya.edu.tr", true, false, null, "B181210051@SAKARYA.EDU.TR", "B181210051@SAKARYA.EDU.TR", "AQAAAAEAACcQAAAAEIh6yKMSS2zOoHOhelb1kfNvnhP+xrY4Z1pQ13JAJ/W2JsAZu67Ozbqas7LNWmWv6w==", null, false, "9fa2e061-2568-40ae-9a28-f3ebb6af81a7", false, "b181210051@sakarya.edu.tr" },
+                    { "8e217364-e21d-5613-a6d7-9413e041cdb9", 0, "33ed15a0-21a3-4799-8d83-90dce9a195ee", "batuhan34@outlook.com", true, false, null, "BATUHAN34@OUTLOOK.COM", "BATUHAN34", "AQAAAAEAACcQAAAAELpgCLrLvs5mlftkHgrRH85iFQWrJXtPUoPQn62hcO8pbPBo6RCNI5j7tF6ZOoxFYw==", null, false, "fd3549c7-7e82-4a79-adfd-8c92dabcf797", false, "batuhan34" }
                 });
 
             migrationBuilder.InsertData(
