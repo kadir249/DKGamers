@@ -32,11 +32,10 @@ namespace DKGamers.Controllers
 
         public IActionResult FavoriyeEkle(int id)
         {
-
             var user = kullaniciYoneticisi.FindByNameAsync(User.Identity.Name).Result;
-
             if (!context.Favori.Any(i => i.OyunID == id))
             {
+
                 var Favori = new Favori()
                 {
                     KullaniciAdi = user.UserName,
@@ -45,15 +44,23 @@ namespace DKGamers.Controllers
                 context.Add(Favori);
                 context.SaveChanges();
             }
-
+            Oyun oyun = context.Oyun.FirstOrDefault(i => i.OyunID == id);
+            oyun.BegenilmeSayisi++;
+            context.Update(oyun);
+            context.SaveChanges();
             return RedirectToAction("Index");
         }
 
         public IActionResult FavoridenCikar(int id)
         {
-            Favori oyun = context.Favori.FirstOrDefault(i => i.OyunID == id);
-            context.Remove(oyun);
+            var user = kullaniciYoneticisi.FindByNameAsync(User.Identity.Name).Result;
+            var cmd = "delete from Favori where KullaniciAdi=@p0 and OyunID=@p1";
+            context.Database.ExecuteSqlRaw(cmd, user.UserName, id);
+            Oyun oyun = context.Oyun.FirstOrDefault(i => i.OyunID == id);
+            oyun.BegenilmeSayisi--;
+            context.Update(oyun);
             context.SaveChanges();
+
 
             return RedirectToAction("Index");
         }

@@ -35,12 +35,14 @@ namespace DKGamers.Controllers
             Oyun oyun = context.Oyun.Include(i => i.OyunKategorileri).ThenInclude(i => i.Kategori).FirstOrDefault(i => i.OyunID == id);
             var yorumlar = context.Yorum.Include(i => i.Oyun).Where(i => i.OyunID == id).ToList();
             var favorilerdemi = context.Favori.Any(i => i.Oyun.OyunID == id);
+            oyun.GoruntulenmeSayisi++;
+            context.Oyun.Update(oyun);
+            context.SaveChanges();
             return View(new OyunDetailViewModel()
             {
                 Oyun = oyun,
                 Yorumlar = yorumlar,
                 favorilerdemi = favorilerdemi
-
             });
         }
         [HttpPost]

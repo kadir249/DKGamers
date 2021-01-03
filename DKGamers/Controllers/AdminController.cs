@@ -1,6 +1,7 @@
 ﻿using DKGamers.Data;
 using DKGamers.Identity;
 using DKGamers.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,11 +21,14 @@ namespace DKGamers.Controllers
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
         }
+
+        [Authorize(Roles = "Admin")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Oyun()
         {
             var oyunlar = context.Oyun.OrderBy(o => o.OyunID).ToList();
@@ -34,6 +38,7 @@ namespace DKGamers.Controllers
             });
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult OyunuGizle(int id)
         {
             Oyun oyun = context.Oyun.FirstOrDefault(i => i.OyunID == id);
@@ -43,6 +48,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult OyunuGoster(int id)
         {
             Oyun oyun = context.Oyun.FirstOrDefault(i => i.OyunID == id);
@@ -51,7 +57,7 @@ namespace DKGamers.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        [Authorize(Roles = "Admin")]
         public IActionResult OyunuGuncelle(Oyun oyun)
         {
 
@@ -60,11 +66,13 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult OyunEkle()
         {
             return View();
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult OyunEkle(Oyun oyun)
         {
             context.Add(oyun);
@@ -72,6 +80,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Oyun", "Admin");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Haber()
         {
             var haberler = context.Haber.OrderBy(o => o.HaberID).ToList();
@@ -81,6 +90,7 @@ namespace DKGamers.Controllers
             });
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult HaberiGizle(int id)
         {
             Haber haber = context.Haber.FirstOrDefault(i => i.HaberID == id);
@@ -90,6 +100,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult HaberiGoster(int id)
         {
             Haber haber = context.Haber.FirstOrDefault(i => i.HaberID == id);
@@ -99,6 +110,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult HaberGuncelle(Haber haber)
         {
 
@@ -106,12 +118,15 @@ namespace DKGamers.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
+
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult HaberEkle()
         {
             return View();
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult HaberEkle(Haber haber)
         {
             context.Add(haber);
@@ -119,15 +134,21 @@ namespace DKGamers.Controllers
             return RedirectToAction("Haber", "Admin");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Kullanici()
         {
             return View(kullaniciYoneticisi.Users);
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> KullaniciSil(string userId)
         {
             var user = await kullaniciYoneticisi.FindByIdAsync(userId);
             await kullaniciYoneticisi.DeleteAsync(user);
+            var cmd = "delete from Favori where KullaniciAdi=@p0";
+            context.Database.ExecuteSqlRaw(cmd, user.UserName);
+            var cmd1 = "delete from Yorum where KullaniciAdi=@p0";
+            context.Database.ExecuteSqlRaw(cmd1, user.UserName);
             return Redirect("/admin/kullanici");
         }
 
