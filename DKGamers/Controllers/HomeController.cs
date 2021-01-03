@@ -14,12 +14,13 @@ namespace DKGamers.Controllers
 {
     public class HomeController : Controller
     {
-        private Context context = new Context();
+        private Context context;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, Context context)
         {
             _logger = logger;
+            this.context = context;
         }
 
         public IActionResult CultureManagement(string Culture, string returnUrl)

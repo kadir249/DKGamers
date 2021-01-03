@@ -13,11 +13,12 @@ namespace DKGamers.Controllers
 {
     public class YorumController : Controller
     {
-        private Context context = new Context();
+        private Context context;
         private UserManager<Kullanici> kullaniciYoneticisi;
-        public YorumController(UserManager<Kullanici> _kullaniciYoneticisi)
+        public YorumController(UserManager<Kullanici> _kullaniciYoneticisi, Context context)
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
+            this.context = context;
         }
         public IActionResult Index()
         {

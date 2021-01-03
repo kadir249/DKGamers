@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.Extensions.Options;
+using DKGamers.Data;
 
 namespace DKGamers
 {
@@ -50,8 +51,8 @@ namespace DKGamers
 
 
 
-            services.AddDbContext<IdentityContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<Kullanici, IdentityRole>().AddEntityFrameworkStores<IdentityContext>().AddDefaultTokenProviders().AddDefaultUI();
+            services.AddDbContext<Context>(options=>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), x => x.MigrationsAssembly("DKGamers")));
+            services.AddIdentity<Kullanici, IdentityRole>().AddEntityFrameworkStores<Context>().AddDefaultTokenProviders().AddDefaultUI();
             services.AddControllersWithViews();
             services.Configure<IdentityOptions>(options =>
             {

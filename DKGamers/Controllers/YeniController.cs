@@ -13,12 +13,13 @@ namespace DKGamers.Controllers
 {
     public class YeniController : Controller
     {
-        private Context context = new Context();
+        private Context context;
 
         private UserManager<Kullanici> kullaniciYoneticisi;
-        public YeniController(UserManager<Kullanici> _kullaniciYoneticisi)
+        public YeniController(UserManager<Kullanici> _kullaniciYoneticisi, Context context)
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
+            this.context = context;
         }
         public IActionResult Index()
         {

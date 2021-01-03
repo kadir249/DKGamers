@@ -15,10 +15,11 @@ namespace DKGamers.Controllers
     {
         private UserManager<Kullanici> kullaniciYoneticisi;
         private Favori favori = new Favori();
-        private Context context = new Context();
-        public FavoriController(UserManager<Kullanici> _kullaniciYoneticisi)
+        private Context context;
+        public FavoriController(UserManager<Kullanici> _kullaniciYoneticisi, Context context)
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
+            this.context = context;
         }
         public IActionResult Index()
         {

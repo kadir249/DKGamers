@@ -13,12 +13,13 @@ namespace DKGamers.Controllers
 {
     public class PopulerController : Controller
     {
-        private Context context = new Context();
+        private Context context;
 
         private UserManager<Kullanici> kullaniciYoneticisi;
-        public PopulerController(UserManager<Kullanici> _kullaniciYoneticisi)
+        public PopulerController(UserManager<Kullanici> _kullaniciYoneticisi, Context context)
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
+            this.context = context;
         }
         public IActionResult Index()
         {

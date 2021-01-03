@@ -19,6 +19,153 @@ namespace DKGamers.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("DKGamers.Identity.Kullanici", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "8e117364-e21d-4613-a6d7-9423e041cdb9",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "7fd12248-90ea-4cf0-b472-5430541e9da3",
+                            Email = "b181210057@sakarya.edu.tr",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "B181210057@SAKARYA.EDU.TR",
+                            NormalizedUserName = "B181210057@SAKARYA.EDU.TR",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDpiEsgvNe3qKas/NE5VYkPFeeKizEgpUgL2eIrAkHShQwOOh3Oz75miPdp6GgWfdQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "70c0c119-715d-4d1f-9002-1cec8d3bcb30",
+                            TwoFactorEnabled = false,
+                            UserName = "b181210057@sakarya.edu.tr"
+                        },
+                        new
+                        {
+                            Id = "8e117364-e21d-4713-a6d7-9423d041edb9",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "29f1ebcc-e0ca-4628-a875-fabdba15c508",
+                            Email = "b181210051@sakarya.edu.tr",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "B181210051@SAKARYA.EDU.TR",
+                            NormalizedUserName = "B181210051@SAKARYA.EDU.TR",
+                            PasswordHash = "AQAAAAEAACcQAAAAECBkJNhq7HF1btgVpSZCVA2l8fWJzbagPIaZch4bBG3FBVpcSRjYPXk+EofhmICbNg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "37d28d11-91fd-4312-adf1-8083c37a1929",
+                            TwoFactorEnabled = false,
+                            UserName = "b181210051@sakarya.edu.tr"
+                        },
+                        new
+                        {
+                            Id = "8e117364-e21d-5613-a6d7-9413e041cdb9",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "ef52b17a-1712-4bc8-be15-8c656dbcfd61",
+                            Email = "bayram@outlook.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "BAYRAM@OUTLOOK.COM",
+                            NormalizedUserName = "BAYRAM57",
+                            PasswordHash = "AQAAAAEAACcQAAAAECAq0cBmyfzJuqxkH7asQUfXdGORf4lt964yEAI7nyKGAEZq/xYlEj3pTga35oBRCQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "4cb0dfb1-6ab5-4e1c-8482-64ce2ca0c5fd",
+                            TwoFactorEnabled = false,
+                            UserName = "bayram57"
+                        },
+                        new
+                        {
+                            Id = "8e217364-e21d-5613-a6d7-9413e041cdb9",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "a3e7c049-d66c-43b2-9956-f19c5e3ffa14",
+                            Email = "batuhan34@outlook.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "BATUHAN34@OUTLOOK.COM",
+                            NormalizedUserName = "BATUHAN34",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJjmh1XDPSgTVH1DH3QQCjMa6QXjh/sWZ3ou5SHUBZ1nKo7p9uT4OeKp9b0UYmINtw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "8e86cc83-6a19-4c0d-95bf-b59e68ad377c",
+                            TwoFactorEnabled = false,
+                            UserName = "batuhan34"
+                        },
+                        new
+                        {
+                            Id = "8e317364-e21d-5613-a6d7-9413e041cdb9",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "40c131e8-300d-47ad-a6c9-e0cb9604f3ff",
+                            Email = "berk77@outlook.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "BERK77@OUTLOOK.COM",
+                            NormalizedUserName = "BERK77",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKs0VLEhR5Kn/NcHbLihxp2si/mkkup0PLVmUfxuGo6SvCljtsFDNnKNjqvMxCgYbg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "218a2016-40ee-4f16-bba0-781130b62539",
+                            TwoFactorEnabled = false,
+                            UserName = "berk77"
+                        });
+                });
+
             modelBuilder.Entity("DKGamers.Models.Favori", b =>
                 {
                     b.Property<int>("FavoriID")
@@ -1229,6 +1376,180 @@ namespace DKGamers.Migrations
                     b.ToTable("Yorum");
                 });
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedName")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            ConcurrencyStamp = "b0a99317-5c07-4ef5-897d-b90d71e30f93",
+                            Name = "admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            ConcurrencyStamp = "d6a3f907-5168-4a4e-a26c-12c5c5d4fa58",
+                            Name = "user",
+                            NormalizedName = "USER"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "8e117364-e21d-4613-a6d7-9423e041cdb9",
+                            RoleId = "1"
+                        },
+                        new
+                        {
+                            UserId = "8e117364-e21d-4713-a6d7-9423d041edb9",
+                            RoleId = "1"
+                        },
+                        new
+                        {
+                            UserId = "8e117364-e21d-5613-a6d7-9413e041cdb9",
+                            RoleId = "2"
+                        },
+                        new
+                        {
+                            UserId = "8e217364-e21d-5613-a6d7-9413e041cdb9",
+                            RoleId = "2"
+                        },
+                        new
+                        {
+                            UserId = "8e317364-e21d-5613-a6d7-9413e041cdb9",
+                            RoleId = "2"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens");
+                });
+
             modelBuilder.Entity("DKGamers.Models.Favori", b =>
                 {
                     b.HasOne("DKGamers.Models.Oyun", "Oyun")
@@ -1258,6 +1579,57 @@ namespace DKGamers.Migrations
                     b.HasOne("DKGamers.Models.Oyun", "Oyun")
                         .WithMany("Yorumlar")
                         .HasForeignKey("OyunID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("DKGamers.Identity.Kullanici", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("DKGamers.Identity.Kullanici", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DKGamers.Identity.Kullanici", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("DKGamers.Identity.Kullanici", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

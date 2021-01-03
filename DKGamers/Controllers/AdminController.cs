@@ -14,21 +14,22 @@ namespace DKGamers.Controllers
 {
     public class AdminController : Controller
     {
-        private Context context = new Context();
+        private Context context;
 
         private UserManager<Kullanici> kullaniciYoneticisi;
-        public AdminController(UserManager<Kullanici> _kullaniciYoneticisi)
+        public AdminController(UserManager<Kullanici> _kullaniciYoneticisi, Context context)
         {
             kullaniciYoneticisi = _kullaniciYoneticisi;
+            this.context = context;
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult Oyun()
         {
             var oyunlar = context.Oyun.OrderBy(o => o.OyunID).ToList();
@@ -38,7 +39,7 @@ namespace DKGamers.Controllers
             });
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult OyunuGizle(int id)
         {
             Oyun oyun = context.Oyun.FirstOrDefault(i => i.OyunID == id);
@@ -48,7 +49,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult OyunuGoster(int id)
         {
             Oyun oyun = context.Oyun.FirstOrDefault(i => i.OyunID == id);
@@ -57,7 +58,7 @@ namespace DKGamers.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult OyunuGuncelle(Oyun oyun)
         {
 
@@ -66,13 +67,13 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult OyunEkle()
         {
             return View();
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult OyunEkle(Oyun oyun)
         {
             context.Add(oyun);
@@ -80,7 +81,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Oyun", "Admin");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult Haber()
         {
             var haberler = context.Haber.OrderBy(o => o.HaberID).ToList();
@@ -90,7 +91,7 @@ namespace DKGamers.Controllers
             });
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult HaberiGizle(int id)
         {
             Haber haber = context.Haber.FirstOrDefault(i => i.HaberID == id);
@@ -100,7 +101,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult HaberiGoster(int id)
         {
             Haber haber = context.Haber.FirstOrDefault(i => i.HaberID == id);
@@ -110,7 +111,7 @@ namespace DKGamers.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult HaberGuncelle(Haber haber)
         {
 
@@ -120,13 +121,13 @@ namespace DKGamers.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult HaberEkle()
         {
             return View();
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult HaberEkle(Haber haber)
         {
             context.Add(haber);
@@ -134,13 +135,13 @@ namespace DKGamers.Controllers
             return RedirectToAction("Haber", "Admin");
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public IActionResult Kullanici()
         {
             return View(kullaniciYoneticisi.Users);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> KullaniciSil(string userId)
         {
             var user = await kullaniciYoneticisi.FindByIdAsync(userId);
