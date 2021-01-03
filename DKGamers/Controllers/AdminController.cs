@@ -76,8 +76,11 @@ namespace DKGamers.Controllers
         [Authorize(Roles = "admin")]
         public IActionResult OyunEkle(Oyun oyun)
         {
-            context.Add(oyun);
-            context.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                context.Add(oyun);
+                context.SaveChanges();
+            }
             return RedirectToAction("Oyun", "Admin");
         }
 
@@ -130,8 +133,11 @@ namespace DKGamers.Controllers
         [Authorize(Roles = "admin")]
         public IActionResult HaberEkle(Haber haber)
         {
-            context.Add(haber);
-            context.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                context.Add(haber);
+                context.SaveChanges();
+            }
             return RedirectToAction("Haber", "Admin");
         }
 

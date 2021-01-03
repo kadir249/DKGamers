@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DKGamers.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20210103105113_add-migration initialize")]
-    partial class addmigrationinitialize
+    [Migration("20210103155104_initialize")]
+    partial class initialize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -90,15 +90,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-4613-a6d7-9423e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5d5bcb5f-6a7d-4d87-9259-0c691dd10ad6",
+                            ConcurrencyStamp = "567abc0b-2687-4924-bf05-db85b07f4dea",
                             Email = "b181210057@sakarya.edu.tr",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "B181210057@SAKARYA.EDU.TR",
                             NormalizedUserName = "B181210057@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKeDUHmZS5snXZ4vRSyOitKMIQPtafhMFLJeOUifLSP3WPRXFFKtr4CT/A0VlCnRtg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELNDX/2vZ8FUQf+oSaPacQNjvFoOb0opNq+TeTLEO/Io4gTkuF0dTehdV+R80gJT8w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fac12227-c322-4a96-8ee0-be05d87582cb",
+                            SecurityStamp = "a5a535f0-1cd0-4132-ae2b-a1829bec2e7b",
                             TwoFactorEnabled = false,
                             UserName = "b181210057@sakarya.edu.tr"
                         },
@@ -106,15 +106,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-4713-a6d7-9423d041edb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "07ba20b7-9bca-4389-847b-728dab64f45b",
+                            ConcurrencyStamp = "939a4985-acb9-4d9c-a25a-c6b59daca707",
                             Email = "b181210051@sakarya.edu.tr",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "B181210051@SAKARYA.EDU.TR",
                             NormalizedUserName = "B181210051@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEORIgjQnYPEWOgjzQ6vDJAVT8JOg2G/EMx9DBmC0gsc6uBdpKhjsve/tT/6YQ4Fm8A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPjD8RoNGOcOYBbWqHWB56zzqPQ0QAClce6MK4+GIOBhDElLleg8hZeZopdr6MHXxw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d94d2156-6bd9-4566-80be-a2e91c39a62c",
+                            SecurityStamp = "d92d450d-c34c-419f-a0cc-7e7415a40e7b",
                             TwoFactorEnabled = false,
                             UserName = "b181210051@sakarya.edu.tr"
                         },
@@ -122,15 +122,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "19bae098-26f8-4302-bc49-88fdb2c3918c",
+                            ConcurrencyStamp = "f3f2195d-31d0-4f1f-b592-e420205b9781",
                             Email = "bayram@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BAYRAM@OUTLOOK.COM",
                             NormalizedUserName = "BAYRAM57",
-                            PasswordHash = "AQAAAAEAACcQAAAAECX9Xxy2vdAy6bBvw6ltkoESYVfKPf1O42Vu4grQouTEpUJXNszRA7s4/uDmWds4bQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAu/e3zqguX5BqcLYqBosJYJwQdn2tkA53FUqddXRMBT0UlCTrzpIFlEe1ngiuiffA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c2399b97-581a-4081-9b13-a9329b57c32f",
+                            SecurityStamp = "baf88338-4a0c-433a-8bdf-8a8f16bb5c3a",
                             TwoFactorEnabled = false,
                             UserName = "bayram57"
                         },
@@ -138,15 +138,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e217364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6b3b1329-8533-4c50-b979-2dd02d293bb4",
+                            ConcurrencyStamp = "d02c5356-6454-47bf-99e8-cba39e6b22d8",
                             Email = "batuhan34@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BATUHAN34@OUTLOOK.COM",
                             NormalizedUserName = "BATUHAN34",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDskb4ZQgvVfxOrfDsH+PnoLNLNxTVYPsUq7bKRaTgp/4DZG6y9UD2jOvg/znAUWAA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJsgybpWjgEwnRWYx+CsebOcjxC8hHd3/u0KrEVFY7Ec4tpXiTE7GOgK1zIjtT1Azw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9a5ef9d7-3cc0-4329-897f-cf3069d25f48",
+                            SecurityStamp = "a2909874-8175-4427-a320-99240fc7f85e",
                             TwoFactorEnabled = false,
                             UserName = "batuhan34"
                         },
@@ -154,15 +154,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e317364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a9d42e43-cd19-40d0-8ea8-0ad10f8df92b",
+                            ConcurrencyStamp = "d6081b06-7331-4727-b4fd-de9e262ef30a",
                             Email = "berk77@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BERK77@OUTLOOK.COM",
                             NormalizedUserName = "BERK77",
-                            PasswordHash = "AQAAAAEAACcQAAAAELFJof6MFqbKqsS2DiMJJytizjR4pYXVwzjsNNUjF0DWhH+q4TYXnyVojAqwdERw4g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEA8CxmY+/kEOMNl7AlpU1DijndhcbGsNzhIVqgpDYQHss7wBTHPz885T/vEuyu4NzQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fde20041-5b3a-49d6-acf2-f6544f6572b5",
+                            SecurityStamp = "c075b55f-8658-4720-ba6d-76970a3b5e2a",
                             TwoFactorEnabled = false,
                             UserName = "berk77"
                         });
@@ -689,30 +689,6 @@ namespace DKGamers.Migrations
                             PiyasayaSurulmeTarihi = new DateTime(2020, 4, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Resim = "oyun28.jpg",
                             Yayinci = "Capcom",
-                            oyunGosterilsinmi = false
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            Aciklama = "PlayerUnknown's Battlegrounds, oyunun sonunda hayatta kalmayı başarabilen tek bir oyuncunun kazanabildiği ve oyuncu topluluklarının görüşlerinin toplanarak ortaya çıkardığı bir oyundur. Tüm oyuncular oyuna eşit şartlarda, kelimenin tam manasıyla hiçbir şeyleri olmadan başlarlar; haritanın çeşitli yerlerinde bulunan silah & ekipman ve gereçleri toplayarak tek başlarına hayatta kalma mücadelesi verirler. UNREAL 4 Oyun Motoruna sahip, gerçekçi ve olağanüstü heyecanlı olan bu oyun, 8 kilometre karelik bir harita içerisinde oynanmaktadır. ",
-                            Gelistirici = "Krafton",
-                            GoruntulenmeSayisi = 1608,
-                            OyunAdi = "PlayerUnknown's Battlegrounds",
-                            PiyasayaSurulmeTarihi = new DateTime(2017, 12, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Resim = "oyun29.jpg",
-                            Yayinci = "Krafton",
-                            oyunGosterilsinmi = false
-                        },
-                        new
-                        {
-                            OyunID = 30,
-                            Aciklama = "MotoGP 20 ile iyice eksiksiz hale getirilmiş olan menajerlik kariyeri modunun tüm heyecanını yaşa ve 2020 sezonuna katılıp katılmayacağına karar vererek resmi sürücülerle yarış ya da tamamen yeni bir takıma katıl. Motosikletini ve kıyafetini özelleştir! En iyi sponsor ve desen kombinasyonunu bul, renkleri ve malzemeleri seç. Her şeyi şık bir şekilde koordine et! Efsane sürücülerle yarış! MotoGP tarihini yeniden yaşamana olanak sağlayan yeni tarihi içerik ve yeni bir oyun modu seni bekliyor. Arkadaşlarına meydan oku, özel etkinlikler oluştur ve ayrı sonucular tarafından desteklenen yeni çok oyunculu mod deneyimi sayesinde yarış direktörü ol!",
-                            Gelistirici = "Milestone",
-                            GoruntulenmeSayisi = 108,
-                            OyunAdi = "MotoGP 2020",
-                            PiyasayaSurulmeTarihi = new DateTime(2020, 4, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Resim = "oyun30.jpg",
-                            Yayinci = "Milestone",
                             oyunGosterilsinmi = false
                         });
                 });
@@ -1271,51 +1247,6 @@ namespace DKGamers.Migrations
                         {
                             OyunID = 28,
                             KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 1
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 4
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 6
-                        },
-                        new
-                        {
-                            OyunID = 29,
-                            KategoriID = 8
-                        },
-                        new
-                        {
-                            OyunID = 30,
-                            KategoriID = 3
-                        },
-                        new
-                        {
-                            OyunID = 30,
-                            KategoriID = 5
-                        },
-                        new
-                        {
-                            OyunID = 30,
-                            KategoriID = 7
-                        },
-                        new
-                        {
-                            OyunID = 30,
-                            KategoriID = 8
                         });
                 });
 
@@ -1375,14 +1306,14 @@ namespace DKGamers.Migrations
                         new
                         {
                             Id = "1",
-                            ConcurrencyStamp = "fdf13695-03fe-4f0a-95ef-87da57370691",
+                            ConcurrencyStamp = "867d53ec-2abb-4d8a-b454-77217ba3b06f",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "2",
-                            ConcurrencyStamp = "16b3c375-748a-4447-a824-3dc991441cf0",
+                            ConcurrencyStamp = "d6aa0dc4-6611-42e9-a82f-07d876d90dfd",
                             Name = "user",
                             NormalizedName = "USER"
                         });
