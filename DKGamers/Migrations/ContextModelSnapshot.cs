@@ -88,15 +88,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-4613-a6d7-9423e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "aecba056-84e5-4330-bbe3-3bf5a6b06f15",
+                            ConcurrencyStamp = "54bb3558-31f9-4975-b656-534dee245cca",
                             Email = "b181210057@sakarya.edu.tr",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "B181210057@SAKARYA.EDU.TR",
                             NormalizedUserName = "B181210057@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFQgT4hgmJleCE1x6XS3jFwUv5n/GCmeZGupf3TXQvKv7m/E6OPYm0ZixQCicU/ZDQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENi3uklsXLw+2ndNW8cqo+PeDED7DriN9GEtg4vAB9Z+JSZRDx+zzy5n4OV4hcim3A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bc83843d-6c25-4302-b51e-b1252921f39c",
+                            SecurityStamp = "6ca6d02d-c943-4f37-a532-ba61a7b309c6",
                             TwoFactorEnabled = false,
                             UserName = "b181210057@sakarya.edu.tr"
                         },
@@ -104,15 +104,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-4713-a6d7-9423d041edb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "610a909a-c801-434f-a72d-0cd093233d66",
+                            ConcurrencyStamp = "66cf4266-3c89-456e-af80-6a43ccd12ea0",
                             Email = "b181210051@sakarya.edu.tr",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "B181210051@SAKARYA.EDU.TR",
                             NormalizedUserName = "B181210051@SAKARYA.EDU.TR",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIh6yKMSS2zOoHOhelb1kfNvnhP+xrY4Z1pQ13JAJ/W2JsAZu67Ozbqas7LNWmWv6w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEM2OB3RLcIzRJ6x6pqSZNjnP6mJcghFosb/IBPd5zrH099ogMq4ltPLWkLsvwYPXyQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9fa2e061-2568-40ae-9a28-f3ebb6af81a7",
+                            SecurityStamp = "bcd7d032-8c9d-493e-9691-888cbf4ea8d1",
                             TwoFactorEnabled = false,
                             UserName = "b181210051@sakarya.edu.tr"
                         },
@@ -120,15 +120,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e117364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "064d17ac-abee-440e-9509-2949886c16d9",
+                            ConcurrencyStamp = "fc7876bc-4f30-4a7b-a6bf-0378da767667",
                             Email = "bayram@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BAYRAM@OUTLOOK.COM",
                             NormalizedUserName = "BAYRAM57",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEBlaZZxxKldBk0CK93MxqaxjeAZ88i6a+8yzP2ezn97JZZzbZTvyzhd9+X2XG4ycw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELkxaEUNoKznB63MC0T06YfS/9guVH6KpXL8Epre+EOJXwLAMn6tdcSHNAF263N5KA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5c26df39-0e54-4fa5-90f4-c0bc3dc837d9",
+                            SecurityStamp = "6fe8b204-23f1-486a-952c-18db006c2cfb",
                             TwoFactorEnabled = false,
                             UserName = "bayram57"
                         },
@@ -136,15 +136,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e217364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "33ed15a0-21a3-4799-8d83-90dce9a195ee",
+                            ConcurrencyStamp = "5887d29c-8fda-4914-b472-923ccafdc8e8",
                             Email = "batuhan34@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BATUHAN34@OUTLOOK.COM",
                             NormalizedUserName = "BATUHAN34",
-                            PasswordHash = "AQAAAAEAACcQAAAAELpgCLrLvs5mlftkHgrRH85iFQWrJXtPUoPQn62hcO8pbPBo6RCNI5j7tF6ZOoxFYw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBMwI6ZQ1NNZ2TZvqXqSIeWxC6ZNHUe65+hCCoGTeH/fvlsi2ZfRfSb80MRGCwdIBA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fd3549c7-7e82-4a79-adfd-8c92dabcf797",
+                            SecurityStamp = "1fb3e6ef-d28a-4f21-b352-1e0143928a0a",
                             TwoFactorEnabled = false,
                             UserName = "batuhan34"
                         },
@@ -152,15 +152,15 @@ namespace DKGamers.Migrations
                         {
                             Id = "8e317364-e21d-5613-a6d7-9413e041cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6c3764a4-fb0d-4797-a279-a0c8bc7e7c3a",
+                            ConcurrencyStamp = "9e5fc502-894b-4c03-b837-7c0eeb897337",
                             Email = "berk77@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "BERK77@OUTLOOK.COM",
                             NormalizedUserName = "BERK77",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGXPD0/K+gJJ3g5pMeuO6ufR/BWy0HsA6QA/cNKFH5iSwupJreOgXU4cuAk6Q/9tgg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKubhPYY28YrDpBDMADc2RcqE/xfAP8kFPC0bSA0usCykRTO62a36NnHITko7HsOQw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "777d8e71-7a6e-493d-8eab-68a23c85b11c",
+                            SecurityStamp = "c44d5e53-aac6-493f-85b9-e5e87a90a6eb",
                             TwoFactorEnabled = false,
                             UserName = "berk77"
                         });
@@ -1304,14 +1304,14 @@ namespace DKGamers.Migrations
                         new
                         {
                             Id = "1",
-                            ConcurrencyStamp = "3585744b-94cb-4004-ad41-5ec493af5247",
+                            ConcurrencyStamp = "74b093fb-ee7c-45a0-91e7-962b9fe86656",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "2",
-                            ConcurrencyStamp = "db2dc16f-53aa-4795-b74e-db5b05b77662",
+                            ConcurrencyStamp = "80a65347-4a6e-4703-a9d2-baef8a137b60",
                             Name = "user",
                             NormalizedName = "USER"
                         });
